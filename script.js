@@ -251,7 +251,7 @@ const products = [
             "MagSafe 1.1.",
 
         icon:
-            "blob:https://web.whatsapp.com/5569295c-ed66-4567-8495-d38dfdb4c377",
+            "https://exitocol.vtexassets.com/arquivos/ids/32837178/power-bank-10000mah-magnetica-compatible-con-magsafe-portatil-para-iphone-17-16-15-14-13-12-series.jpg?v=639095569548600000",
 
         prices: [
             [1, 80000]
