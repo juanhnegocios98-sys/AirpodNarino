@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AirPods | Nariño</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================================
+         HEADER
+    ================================ -->
+
+    <header>
+
+        <a class="logo" href="#">
+            <span class="logo-icon">⌁</span>
+            AIRPODS <span>| NARIÑO</span>
+        </a>
+
+        <button class="cart-button" onclick="openCart()">
+            🛒 Carrito
+            <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- ================================
+         HERO
+    ================================ -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="sound-wave wave-one"></div>
+            <div class="sound-wave wave-two"></div>
+            <div class="sound-wave wave-three"></div>
+
+            <div class="floating-airpod airpod-one">♪</div>
+            <div class="floating-airpod airpod-two">♫</div>
+            <div class="floating-airpod airpod-three">♪</div>
+
+            <div class="hero-content">
+
+                <div class="brand-badge">
+                    <span class="brand-dot"></span>
+                    AIRPODS | NARIÑO
+                </div>
+
+                <p class="small-title">
+                    TECNOLOGÍA · SONIDO · ESTILO
+                </p>
+
+                <h1>
+                    Sonido.
+                    <br>
+                    <span>Sin límites.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Catálogo de AirPods, Apple Watch, cargadores y combos
+                    para emprendedores. Compra por unidad o aprovecha
+                    nuestros precios por cantidad.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#productos" class="hero-button">
+                        Ver catálogo
+                        <span>→</span>
+                    </a>
+
+                    <a href="#emprendedores" class="hero-secondary-button">
+                        Combos emprendedores
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-product">
+
+                <div class="hero-product-ring ring-one"></div>
+                <div class="hero-product-ring ring-two"></div>
+                <div class="hero-product-ring ring-three"></div>
+
+                <div class="hero-airpods">
+
+                    <div class="earbud earbud-left"></div>
+                    <div class="earbud earbud-right"></div>
+
+                    <div class="case">
+
+                        <div class="case-light"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-product-label">
+                    <strong>AIRPODS</strong>
+                    <span>NARIÑO</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             PRODUCTOS
+        ================================ -->
+
+        <section id="productos" class="products-section">
+
+            <div class="section-title">
+
+                <div class="section-label">
+                    CATÁLOGO
+                </div>
+
+                <h2>
+                    Nuestros productos
+                </h2>
+
+                <span>
+                    Tecnología, accesorios y sonido para todos.
+                </span>
+
+            </div>
+
+            <div id="products" class="products"></div>
+
+        </section>
+
+
+        <!-- ================================
+             EMPRENDEDORES
+        ================================ -->
+
+        <section id="emprendedores" class="entrepreneurs-section">
+
+            <div class="entrepreneurs-decoration decoration-one"></div>
+            <div class="entrepreneurs-decoration decoration-two"></div>
+
+            <div class="section-title">
+
+                <div class="section-label">
+                    PARA EMPRENDEDORES
+                </div>
+
+                <h2>
+                    Combos emprendedores
+                </h2>
+
+                <span>
+                    Paquetes pensados para empezar a vender.
+                </span>
+
+            </div>
+
+            <div id="entrepreneur-products" class="entrepreneur-grid"></div>
+
+        </section>
+
+
+        <!-- ================================
+             ENTREGA
+        ================================ -->
+
+        <section class="delivery-section">
+
+            <div class="delivery-content">
+
+                <div class="section-label">
+                    ENTREGAS EN PASTO
+                </div>
+
+                <h2>
+                    Elige cómo recibir tu pedido.
+                </h2>
+
+                <p>
+                    • <strong>Domicilio:</strong>
+                    tiene un costo adicional de $7.000.
+                </p>
+
+                <p>
+                    • <strong>Punto de entrega:</strong>
+                    entrega personal sin costo de domicilio.
+                </p>
+
+            </div>
+
+
+            <div class="pickup-card">
+
+                <div class="pickup-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <strong>
+                        Punto de entrega
+                    </strong>
+
+                    <p>
+                        Avenida Santander, calle 22 #22-14<br>
+                        Edificio Molinos de la Pampa<br>
+                        Apartamento 10-02
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         CARRITO
+    ================================ -->
+
+    <div id="cart-modal" class="modal">
+
+        <div class="cart">
+
+            <button class="close" onclick="closeCart()">
+                ×
+            </button>
+
+            <p class="modal-kicker">
+                TU COMPRA
+            </p>
+
+            <h2>
+                Tu carrito
+            </h2>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-total">
+
+                <span>
+                    Total productos
+                </span>
+
+                <strong id="cart-total">
+                    $0
+                </strong>
+
+            </div>
+
+            <button
+                class="checkout-button"
+                onclick="openCheckout()"
+            >
+                Continuar con el pedido
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         CHECKOUT
+    ================================ -->
+
+    <div id="checkout-modal" class="modal">
+
+        <div class="checkout">
+
+            <button class="close" onclick="closeCheckout()">
+                ×
+            </button>
+
+            <p class="modal-kicker">
+                FINALIZAR PEDIDO
+            </p>
+
+            <h2>
+                Datos del pedido
+            </h2>
+
+            <p class="checkout-description">
+                Solo necesitamos tu nombre, número, método de entrega
+                y forma de pago.
+            </p>
+
+
+            <form id="order-form">
+
+                <label for="name">
+                    Nombre
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Tu nombre"
+                    required
+                >
+
+
+                <label for="phone">
+                    Número
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="300 000 0000"
+                    required
+                >
+
+
+                <label for="delivery">
+                    Método de entrega
+                </label>
+
+                <select id="delivery" required>
+
+                    <option value="">
+                        Selecciona una opción
+                    </option>
+
+                    <option value="Domicilio">
+                        Domicilio — $7.000
+                    </option>
+
+                    <option value="Punto de entrega">
+                        Punto de entrega — $0
+                    </option>
+
+                </select>
+
+
+                <!-- DIRECCIÓN -->
+
+                <div id="address-box" class="address-box">
+
+                    <strong>
+                        📍 Punto de entrega
+                    </strong>
+
+                    <p>
+                        Avenida Santander, calle 22 #22-14,
+                        Edificio Molinos de la Pampa,
+                        apartamento 10-02.
+                    </p>
+
+                </div>
+
+
+                <label for="payment">
+                    Método de pago
+                </label>
+
+                <select id="payment" required>
+
+                    <option value="">
+                        Selecciona un método
+                    </option>
+
+                    <option value="Nequi">
+                        Nequi
+                    </option>
+
+                    <option value="Efectivo">
+                        Efectivo
+                    </option>
+
+                </select>
+
+
+                <button
+                    type="submit"
+                    class="whatsapp-button"
+                >
+                    📱 Enviar pedido por WhatsApp
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================
+         FOOTER
+    ================================ -->
+
+    <footer>
+
+        <div class="footer-logo">
+            AIRPODS <span>| NARIÑO</span>
+        </div>
+
+        <p>
+            Tecnología que se escucha.
+        </p>
+
+        <p>
+            © 2026 AIRPODS | NARIÑO
+        </p>
+
+        <p>
+            Pedidos por WhatsApp: 315 047 2837
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
