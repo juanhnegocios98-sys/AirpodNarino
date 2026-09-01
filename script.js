@@ -147,7 +147,7 @@ const products = [
             "Cabeza de carga 40W original.",
 
         icon:
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeDVyEvESbMTtFAMMvCFi0Wtkn8kWsHsqzzo4s3EvnOA&s",
+            "https://mac-center.com/cdn/shop/files/IMG-17898497_m_jpeg_1.jpg?v=1757469465&width=1445",
 
         prices: [
             [1, 150000],
@@ -251,7 +251,7 @@ const products = [
             "MagSafe 1.1.",
 
         icon:
-            "https://kfdigital.co/wp-content/uploads/2023/07/MHXH3.jpg",
+            "blob:https://web.whatsapp.com/5569295c-ed66-4567-8495-d38dfdb4c377",
 
         prices: [
             [1, 80000]
