@@ -2,7 +2,7 @@
 // CONFIGURACIÓN
 // =====================================================
 
-const WHATSAPP_NUMBER = "573150472837";
+const WHATSAPP_NUMBER = "573177091262";
 
 const DELIVERY_PRICE = 7000;
 
